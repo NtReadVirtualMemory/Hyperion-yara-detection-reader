@@ -19,7 +19,7 @@ void MoveCursorToTop()
 
 int main()
 {
-    SetConsoleTitle("Yara Detection Reader - 0x108 & Bytecode ;) - version-ad3ee47cdc5e44f6");
+    SetConsoleTitle("Yara Detection Reader - 0x108 & Bytecode ;) - version-e1da58b32b1c4d64");
 
     pid = GetPID("Roblox");
     if (!pid) {
@@ -43,7 +43,7 @@ int main()
     cursorInfo.bVisible = FALSE;
     SetConsoleCursorInfo(hConsole, &cursorInfo);
     while (true) {
-        YaraResult results = Read<YaraResult>(hyperionBase + 0x2A0768); 
+        YaraResult results = Read<YaraResult>(hyperionBase + 0x2D7540); 
         MoveCursorToTop();
 
         std::cout << "SCAN_BAD_CERT = " << results.SCAN_BAD_CERT << "          \n";
