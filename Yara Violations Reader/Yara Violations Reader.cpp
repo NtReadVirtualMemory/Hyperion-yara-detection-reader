@@ -43,8 +43,7 @@ int main()
     cursorInfo.bVisible = FALSE;
     SetConsoleCursorInfo(hConsole, &cursorInfo);
     while (true) {
-        // 0x2840F8 Next Update (version-38d71f95cf424504)
-        YaraResult results = Read<YaraResult>(hyperionBase + 0x2D7540); 
+        YaraResult results = Read<YaraResult>(hyperionBase + 0x2D64CC); 
         MoveCursorToTop();
 
         std::cout << "SCAN_BAD_CERT = " << results.SCAN_BAD_CERT << "          \n";
