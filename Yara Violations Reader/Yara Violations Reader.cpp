@@ -19,7 +19,7 @@ void MoveCursorToTop()
 
 int main()
 {
-    SetConsoleTitle("Yara Detection Reader - 0x108 & Bytecode ;) - version-e1da58b32b1c4d64");
+    SetConsoleTitle("Yara Detection Reader - 0x108 & Bytecode ;) - version-9bf2d7ce6a0345d5");
 
     pid = GetPID("Roblox");
     if (!pid) {
